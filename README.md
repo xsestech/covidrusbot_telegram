@@ -1,4 +1,4 @@
-# Covid Rus Bot
+# Covid Rus Bot([view in telegram](ttttt.me/covidrusbot))
 ## Installation
 :warning: *You need python 3.7 or higher*
 ### Mac os/Linux
