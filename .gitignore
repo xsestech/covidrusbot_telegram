@@ -1,0 +1,8 @@
+env7
+botter2.db
+config.pycares
+.vscode
+*.pyc
+venv
+abot.log
+*.db-journal

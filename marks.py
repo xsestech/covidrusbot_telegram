@@ -1,0 +1,31 @@
+from aiogram import types
+from cstatic import cities
+
+sbtn3 = types.KeyboardButton("Назад")
+menus = types.ReplyKeyboardMarkup(resize_keyboard=True)
+btn1 = types.KeyboardButton("📊Статистика")
+btn2 = types.KeyboardButton("⚙️Настройки")
+btn3 = types.KeyboardButton("ℹ️info")
+menus.add(btn1)
+menus.add(btn2)
+menus.add(btn3)
+mark = types.ReplyKeyboardMarkup(resize_keyboard=True)
+for city in cities:
+    btn = types.KeyboardButton(city)
+    mark.add(btn)
+mark.add(sbtn3)
+cancel = types.ReplyKeyboardMarkup(resize_keyboard=True).add(types.KeyboardButton("Назад"))
+remove = types.ReplyKeyboardRemove()
+sbtn1 = types.KeyboardButton("🏙️Изменить город")
+sbtn2 = types.KeyboardButton("⏱️Изменить время отправки")
+sett = types.ReplyKeyboardMarkup(resize_keyboard=True)
+sett.add(sbtn1)
+sett.add(sbtn2)
+sett.add(sbtn3)
+times = types.ReplyKeyboardMarkup(resize_keyboard=True)
+for i in range(23):
+    bln = types.KeyboardButton("{0}:{1}".format(i, "00"))
+    bln2 = types.KeyboardButton("{0}:{1}".format(i, 30))
+    times.add(bln)
+    times.add(bln2)
+times.add(sbtn3)
